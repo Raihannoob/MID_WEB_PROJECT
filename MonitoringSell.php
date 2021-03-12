@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>DASHBOARD</title>
+    <title>Monitoring Sell</title>
 </head>
 
 <body>
@@ -48,7 +47,11 @@
                 </ul>
             </td>
             <td>
-                <h1>Welcome</h1>
+                <a href='ViewExpense.php'><h2>View Expense</h2></a>
+                <a href='EmployeeAttendence.php'><h2>Employee Attendence</h2></a>
+                <a href='ViewEmployeeSalary.php'><h2>view Employee Salary</h2></a>
+                <a href=''><h2></h2></a>
+
             </td>
         </tr>
     </table>
@@ -59,6 +62,7 @@
             </label>
         </center>
     </fieldset>
+
 </body>
 
 </html>

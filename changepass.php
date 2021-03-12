@@ -35,14 +35,12 @@
                     <li><a href='UpdateInformation.php'>Update Information</a></li>
                     <li><a href=''>Monitoring Sell</a></li>
                     <li><a href=''>Medicine Stock</a></li>
-                    <li><a href=''>Destruction of Expired Items</a></li>
-                    <li><a href=''>Return of Items which are Nearing Expire</a></li>
+                    <li><a href=''>Expired Items</a></li>
                     <li><a href=''>contact with admin</a></li>
                     <li><a href=''>Database system</a></li>
                     <li><a href=''>call for a Meeting</a></li>
-                    <li><a href=''>Monitoring Invtentory</a></li>
-                    <li><a href=''>Maintenance the system</a></li>
-                    <li><a href=''>....</a></li>
+                    <li><a href=''>Invtentory</a></li>
+                    <li><a href=''>system Details</a></li>
                     <li><a href=''>Connect website with social media</a></li>
                 </ul>
             </td>
@@ -78,12 +76,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
-                                    <hr>
-                                </td>
                             </tr>
                             <tr>
+
                                 <td colspan="2">
+                                    <hr>
                                     <input type='checkbox'>Remember Me
                                 </td>
                             </tr>
