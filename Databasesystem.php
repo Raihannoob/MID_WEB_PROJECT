@@ -38,7 +38,7 @@
                     <li><a href='MedicineStock.php'>Medicine Stock</a></li>
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
-                    <li><a href='Databasesystem.php'>Database system</a></li>
+                    <li><a href='Databasesystem.html'>Database system</a></li>
                     <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
                     <li><a href='systemDetails.php'>system Details</a></li>
@@ -48,7 +48,7 @@
                 </ul>
             </td>
             <td>
-                <h1>This Function is not Available right Now.It will Comming Soon!!!</h1>
+                <h1>Sorry This Function is not available Now.It Will comming Soon!!!!</h1>
             </td>
         </tr>
     </table>
