@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>DASHBOARD</title>
+    <title>Monitoring Sell</title>
 </head>
 
 <body>
@@ -39,7 +38,7 @@
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
                     <li><a href='Databasesystem.html'>Database system</a></li>
-                    <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
+                    <li><a href='callforaMeeting.html'>call for a Meeting</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
                     <li><a href='systemDetails.php'>system Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
@@ -48,7 +47,28 @@
                 </ul>
             </td>
             <td>
-                <h1>Welcome</h1>
+                <table border="1px solid black" width='80%' align='center'>
+                    <tr>
+                        <th>Meeting tittle</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        <th>comment</th>
+                    </tr>
+                    <tr>
+                        <td>Meeting about discount </td>
+                        <td>12.00 pm</td>
+                        <td>3/12/2021</td>
+                        <td>Must attend</td>
+
+                    </tr>
+                    <tr>
+                        <td>Meeting about add item </td>
+                        <td>12.00 pm</td>
+                        <td>3/12/2021</td>
+                        <td>optional</td>
+                    </tr>
+                </table>
+
             </td>
         </tr>
     </table>
@@ -59,6 +79,7 @@
             </label>
         </center>
     </fieldset>
+
 </body>
 
 </html>

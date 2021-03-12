@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>DASHBOARD</title>
+    <title>Monitoring Sell</title>
 </head>
 
 <body>
@@ -39,7 +38,7 @@
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
                     <li><a href='Databasesystem.html'>Database system</a></li>
-                    <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
+                    <li><a href='callforaMeeting.html'>call for a Meeting</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
                     <li><a href='systemDetails.php'>system Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
@@ -48,7 +47,44 @@
                 </ul>
             </td>
             <td>
-                <h1>Welcome</h1>
+                <table border="1px solid black" width='80%' align='center'>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Branch</th>
+                        <th>Delete</th>
+
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>10</td>
+                        <td>100tk</td>
+                        <td>Dhaka</td>
+                        <td>
+                            <a href=''>Delete From Database</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MAxpro</td>
+                        <td>10</td>
+                        <td>100tk</td>
+                        <td>Dhaka,Khilgao</td>
+                        <td>
+                            <a href=''>Delete From Database</a></li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sildip</td>
+                        <td>20</td>
+                        <td>2100tk</td>
+                        <td>Dhaka</td>
+                        <td>
+                            <a href=''>Delete From Database</a></li>
+                        </td>
+                    </tr>
+                    
+                </table>
             </td>
         </tr>
     </table>
@@ -59,6 +95,7 @@
             </label>
         </center>
     </fieldset>
+
 </body>
 
 </html>
