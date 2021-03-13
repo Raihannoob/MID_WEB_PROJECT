@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ($_SESSION['flag'] != true) {
+    header('location: login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +22,7 @@
                 </td>
                 <td align='right'>
                     <nav>
-                        <label>Logged in as <a href='home.php'> </a> </label>|
+                        <label>Logged in as<a href='viewprofile.php'>  <?php echo $_SESSION['username'] ?> </a> </label>|
                         <a href='logout.php'>Log Out</a>
                     </nav>
                 </td>
@@ -48,7 +55,7 @@
                 </ul>
             </td>
             <td>
-                <h1>Welcome</h1>
+                <h1>Welcome <?php echo $_SESSION['username'] ?> </h1>
             </td>
         </tr>
     </table>

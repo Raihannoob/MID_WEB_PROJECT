@@ -36,15 +36,15 @@
                     <li><a href='changepic.php'>Change Profile Picture</a></li>
                     <li><a href='changepass.php'>Change Password</a></li>
                     <li><a href='UpdateInformation.php'>Update Information</a></li>
-                    <li><a href=''>Monitoring Sell</a></li>
-                    <li><a href=''>Medicine Stock</a></li>
-                    <li><a href=''>Expired Items</a></li>
-                    <li><a href=''>contact with admin</a></li>
-                    <li><a href=''>Database system</a></li>
-                    <li><a href=''>call for a Meeting</a></li>
-                    <li><a href=''>Invtentory</a></li>
-                    <li><a href=''>system Details</a></li>
-                    <li><a href=''>Connect website with social media</a></li>
+                    <li><a href='MonitoringSell.php'>Monitoring Sell</a></li>
+                    <li><a href='MedicineStock.php'>Medicine Stock</a></li>
+                    <li><a href='ExpiredItems.php'>Expired Items</a></li>
+                    <li><a href='contactwithadmin.php'>contact with admin</a></li>
+                    <li><a href='Databasesystem.php'>Database system</a></li>
+                    <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
+                    <li><a href='Invtentory.php'>Invtentory</a></li>
+                    <li><a href='systemDetails.php'>system Details</a></li>
+                    <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
                 </ul>
             </td>
             <td>

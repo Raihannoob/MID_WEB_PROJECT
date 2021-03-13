@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Monitoring Sell</title>
+    <title>Contact Admin</title>
 </head>
 
 <body>
@@ -37,8 +37,8 @@
                     <li><a href='MedicineStock.php'>Medicine Stock</a></li>
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
-                    <li><a href='Databasesystem.html'>Database system</a></li>
-                    <li><a href='callforaMeeting.html'>call for a Meeting</a></li>
+                    <li><a href='Databasesystem.php'>Database system</a></li>
+                    <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
                     <li><a href='systemDetails.php'>system Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>

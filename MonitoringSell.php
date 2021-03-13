@@ -37,8 +37,8 @@
                     <li><a href='MedicineStock.php'>Medicine Stock</a></li>
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
-                    <li><a href='Databasesystem.html'>Database system</a></li>
-                    <li><a href='callforaMeeting.html'>call for a Meeting</a></li>
+                    <li><a href='Databasesystem.php'>Database system</a></li>
+                    <li><a href='callforaMeeting.php'>call for a Meeting</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
                     <li><a href='systemDetails.php'>system Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
@@ -47,10 +47,18 @@
                 </ul>
             </td>
             <td>
-                <a href='ViewExpense.php'><h2>View Expense</h2></a>
-                <a href='EmployeeAttendence.php'><h2>Employee Attendence</h2></a>
-                <a href='ViewEmployeeSalary.php'><h2>view Employee Salary</h2></a>
-                <a href=''><h2></h2></a>
+                <a href='ViewExpense.php'>
+                    <h2>View Expense</h2>
+                </a>
+                <a href='EmployeeAttendence.php'>
+                    <h2>Employee Attendence</h2>
+                </a>
+                <a href='ViewEmployeeSalary.php'>
+                    <h2>view Employee Salary</h2>
+                </a>
+                <a href=''>
+                    <h2></h2>
+                </a>
 
             </td>
         </tr>

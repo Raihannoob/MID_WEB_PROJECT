@@ -32,7 +32,7 @@
     <fieldset>
         <center>
             <label>
-                Copyright © 2017
+                Copyright © 2021
             </label>
         </center>
     </fieldset>

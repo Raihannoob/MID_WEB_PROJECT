@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DASHBOARD</title>
+    <title>Insert New products</title>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
             </td>
             <td>
                 <fieldset>
-                    <legend><b>Insert New  Product Information</b></legend>
+                    <legend><b>Insert New Product Information</b></legend>
                     <form action='' method=''>
                         <table>
                             <tr>
@@ -95,7 +95,7 @@
                             </tr>
                         </table>
                     </form>
-                    </fieldset>
+                </fieldset>
             </td>
         </tr>
     </table>

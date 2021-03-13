@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DASHBOARD</title>
+    <title>System Details</title>
 </head>
 
 <body>

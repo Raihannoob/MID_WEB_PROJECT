@@ -1,17 +1,7 @@
-<?php
-session_start();
-if (isset($_SESSION['flag'])) {
-    header('location: login.php');
-}
-?>
-
 <!DOCTYPE html>
-
 <head>
-
     <title>Registration</title>
 </head>
-
 <body>
     <fieldset>
         <table width='100%' height=100>
@@ -35,8 +25,8 @@ if (isset($_SESSION['flag'])) {
             <legend>
                 <b>REGISTRATION</b>
             </legend>
-            <form action='checkregistration.php' method='POST'>
-                <table align="">
+            <form action='checkreg.php' method='POST'>
+                <table>
                     <tr>
                         <td>
                             Name:
@@ -56,6 +46,19 @@ if (isset($_SESSION['flag'])) {
                         </td>
                         <td>
                             <input type="email" name='email'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone Number:
+                        </td>
+                        <td>
+                            <input type="text" name='phonenumber'>
                         </td>
                     </tr>
                     <tr>
@@ -120,9 +123,9 @@ if (isset($_SESSION['flag'])) {
                                 <legend>
                                     <b>Date of Birth</b>
                                 </legend>
-                                <input type='number' name=date max=31 min=1>/
-                                <input type='number' name=month max=12 min=1>/
-                                <input type='number' name=year max=2100 min=1900>
+                                <input type='number' name='date' max=31 min=1>/
+                                <input type='number' name='month' max=12 min=1>/
+                                <input type='number' name='year' max=2100 min=1900>
                                 <label><i>dd/mm/yyyy</i></label>
                             </fieldset>
                         </td>
