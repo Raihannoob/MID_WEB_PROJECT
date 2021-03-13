@@ -1,3 +1,33 @@
+<?php
+session_start();
+if ($_SESSION['flag1'] != true) {
+    header('location: login.php');
+}
+        
+if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST['retypenewpassword'])) {
+    if ($_POST['newpassword'] == $_POST['oldpassword' ]) {
+        echo "New Password should not be same as the Current Password\r\n";
+        $s=false;
+    }
+    
+    if ($_POST['newpassword'] != $_POST['retypenewpassword']) {
+        echo "New Password must match with the Retyped Password";
+        $s = false;
+        
+    } 
+    else {
+        $s = true;
+    }
+    if( $s==true){
+        echo "New Password Change Successfully";
+    }
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +44,7 @@
                 </td>
                 <td align='right'>
                     <nav>
-                        <label>Logged in as <a href='home.php'></a> </label>|
+                        <label>Logged in as <a href='home.php'><?php echo $_SESSION['username'] ?> </a> </label>|
                         <a href='logout.php'>Log Out</a>
                     </nav>
                 </td>
@@ -49,7 +79,7 @@
                     <legend>
                         Change Password
                     </legend>
-                    <form action='' method=''>
+                    <form action='' method='post'>
                         <table>
                             <tr>
                                 <td>
