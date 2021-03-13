@@ -1,15 +1,9 @@
 <?php
 session_start();
-
-if (isset($_POST['Submit']) && isset($_POST['Email'])) {
-	if ($_POST['Email'] === "") {
-		echo "Email field is empty";
-	} elseif ($_SESSION['email'] === $_POST['Email']) {
-		echo "You will get a mail\r\n";
-	} else {
-		echo "Please check your Email";
-	}
+if ($_SESSION['flag'] != true) {
+	header('location: login.php');
 }
+
 ?>
 
 
@@ -24,8 +18,8 @@ if (isset($_POST['Submit']) && isset($_POST['Email'])) {
 	<table border="1" width="100%" cellspacing="0">
 		<tr>
 			<td align="right">
-				<a href="publicHome.html"> <img src="logo.jpg" align="left" height='100px'> </a>
-				<a href="publicHome.html"> Home </a>
+				<a href="home.php"> <img src="logo.jpg" align="left" height='100px'> </a>
+				<a href="home.php"> Home </a>
 				&nbsp | &nbsp
 				<a href="login.php"> Login </a>
 				&nbsp | &nbsp
@@ -61,3 +55,15 @@ if (isset($_POST['Submit']) && isset($_POST['Email'])) {
 </body>
 
 </html>
+
+<?php
+if (isset($_POST['Submit']) && isset($_POST['Email'])) {
+	if ($_POST['Email'] == "") {
+		echo "Email field is empty!";
+	} elseif ($_SESSION['email'] === $_POST['Email']) {
+		echo "We will give feedback \r\n";
+	} else {
+		echo "Please check your Email!";
+	}
+}
+?>

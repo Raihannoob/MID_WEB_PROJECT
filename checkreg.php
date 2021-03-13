@@ -11,7 +11,7 @@
         $date               = $_POST['date'];
         $month              = $_POST['month'];
         $year               = $_POST['year'];
-        $phone              =    $_POST['phonenumber'];
+        $phone              = $_POST['phonenumber'];
 
         for($i=0;$i<strlen($name);$i++)
         {
@@ -72,6 +72,7 @@
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;
         $_SESSION['gender'] = $gender;
+        $_SESSION['phone'] = $phone;
         $_SESSION['date'] = $date;
         $_SESSION['month'] = $month;
         $_SESSION['year'] = $year;

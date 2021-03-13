@@ -62,7 +62,7 @@ if (isset($_SESSION['flag'])) {
                     <tr>
                         <td colspan="2">
                             <input type='submit' value='Submit'>
-                            <a href='forgot.php'>Forgot Password?</a>
+                            <a href='forgetpassword.php'>Forgot Password?</a>
                         </td>
                     </tr>
                 </table>

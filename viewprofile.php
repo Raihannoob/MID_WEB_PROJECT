@@ -1,4 +1,8 @@
 <?php
+session_start();
+if ($_SESSION['flag1'] != true) {
+    header('location: login.php');
+}
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +21,7 @@
                 </td>
                 <td align='right'>
                     <nav>
-                        <label>Logged in as <a href='home.php'> </a> </label>|
+                        <label>Logged in as <?php echo $_SESSION['username'] ?> <a href='home.php'> </a> </label>|
                         <a href='logout.php'>Log Out</a>
                     </nav>
                 </td>
@@ -56,7 +60,7 @@
                                 Name:
                             </td>
                             <td>
-
+                                <?php echo $_SESSION['name'] ?>
                             </td>
                             <td rowspan="8" align="center">
                                 <img src='user.png' height="150px" />
@@ -73,7 +77,7 @@
                                 Email:
                             </td>
                             <td>
-
+                                <?php echo $_SESSION['email'] ?>
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +90,20 @@
                                 Gender:
                             </td>
                             <td>
-
+                                <?php echo $_SESSION['gender'] ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone:
+                            </td>
+                            <td>
+                                <?php echo $_SESSION['phone'] ?>
                             </td>
                         </tr>
                         <tr>
@@ -99,7 +116,11 @@
                                 Date of Birth:
                             </td>
                             <td>
-
+                                <?php echo $_SESSION['date'] ?>
+                                <?php echo "/" ?>
+                                <?php echo $_SESSION['month'] ?>
+                                <?php echo "/" ?>
+                                <?php echo $_SESSION['year'] ?>
                             </td>
                         </tr>
                         <tr>
