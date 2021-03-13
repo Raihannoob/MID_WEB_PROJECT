@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Inventory</title>
+    <title>View All products Sell</title>
 </head>
 
 <body>
@@ -47,19 +47,22 @@
                 </ul>
             </td>
             <td>
-                <a href='InsertNewproduct.php'>
-                    <h2>Insert new products</h2>
-                </a>
-                
-                <a href='updateproduct.php'>
-                    <h2>Update products </h2>
-                </a>
-                <a href='viewproduct.php'>
-                    <h2>view All products</h2>
-                </a>
-                <a href=''>
-                    <h2></h2>
-                </a>
+                <table border="1px solid black" width='80%' align='center'>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Buying Price</th>
+                        <th>Selling Price</th>
+                    </tr>
+                    <tr>
+                        <td>napa</td>
+                        <td>100</td>
+                        <td>100 tk</td>
+                        <td>120 tk</td>
+
+                    </tr>
+                   
+                </table>
 
             </td>
         </tr>
