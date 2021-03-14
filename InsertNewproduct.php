@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ($_SESSION['flag1'] != true) {
+    header('location: login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -50,7 +58,7 @@
             <td>
                 <fieldset>
                     <legend><b>Insert New Product Information</b></legend>
-                    <form action='' method=''>
+                    <form action='insertnewproductcheck.php' method='post'>
                         <table>
                             <tr>
                                 <td>
@@ -89,7 +97,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <input type='submit' value='Submit'>
+                                    <input type='submit' name = 'submit' value='submit'>
                                     <input type='Reset' value='Reset'>
                                 </td>
                             </tr>
