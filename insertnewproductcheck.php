@@ -8,7 +8,7 @@
             
    		if($name != "" && $Quantity != "" && $Buyprice != "" && $Sellprice != "" )
 		{
-			if(file_exists('user.json')){
+			if(file_exists('productinfo.json')){
    			$current_data = file_get_contents('productinfo.json');
 			$array_data = json_decode($current_data,true);
 			

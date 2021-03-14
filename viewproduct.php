@@ -1,3 +1,22 @@
+<?php
+session_start();
+if ($_SESSION['flag1'] != true) {
+    header('location: login.php');
+}
+
+if (file_exists('productinfo.json')) {
+    $current_data = file_get_contents('productinfo.json');
+    $array_data = json_decode($current_data, true);
+    print_r($array_data[0]['ProductName']);
+    $pname = $array_data[0]['ProductName'];
+    $Quantity = $array_data[0]['Quantity'];
+    $Buyprice = $array_data[0]['Buyprice'];
+    $Sellprice = $array_data[0]['Sellprice'];
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -55,10 +74,10 @@
                         <th>Selling Price</th>
                     </tr>
                     <tr>
-                        <td>napa</td>
-                        <td>100</td>
-                        <td>100 tk</td>
-                        <td>120 tk</td>
+                        <td><?php echo $pname; ?> </td>
+                        <td><?php echo $Quantity; ?></td>
+                        <td><?php echo $Buyprice; ?></td>
+                        <td><?php echo $Sellprice; ?></td>
 
                     </tr>
 
