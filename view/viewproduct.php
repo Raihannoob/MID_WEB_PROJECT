@@ -2,8 +2,8 @@
          $title = "view All product";
         include('header.php');
 
-if (file_exists('productinfo.json')) {
-    $current_data = file_get_contents('productinfo.json');
+if (file_exists('../model/productinfo.json')) {
+    $current_data = file_get_contents('../model/productinfo.json');
     $array_data = json_decode($current_data, true);
     $pname = $array_data[0]['ProductName'];
     $Quantity = $array_data[0]['Quantity'];

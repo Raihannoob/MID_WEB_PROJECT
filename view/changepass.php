@@ -40,12 +40,12 @@ if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST
         <table width='100%'>
             <tr>
                 <td>
-                    <img src='logo.jpg' height='100px' />
+                    <img src='../asset/logo.jpg' height='100px' />
                 </td>
                 <td align='right'>
                     <nav>
                         <label>Logged in as <a href='home.php'><?php echo $_SESSION['username'] ?> </a> </label>|
-                        <a href='logout.php'>Log Out</a>
+                        <a href='../controller/logout.php'>Log Out</a>
                     </nav>
                 </td>
             </tr>

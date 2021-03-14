@@ -12,12 +12,12 @@
                 if($username == $_SESSION['username'] && $password == $_SESSION['password'])
                 {
                         $_SESSION['flag1'] = true;
-                        header('location: dashboard.php');
+                        header('location: ../view/dashboard.php');
                 }
                 else
                 {
                     echo "Please Enter Valid Username and password! \r\n";
-                    header('location: login.php');
+                    header('location:  ../view/login.php');
                 }
                     
     }

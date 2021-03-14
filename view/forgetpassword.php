@@ -18,12 +18,13 @@ if ($_SESSION['flag'] != true) {
 	<table border="1" width="100%" cellspacing="0">
 		<tr>
 			<td align="right">
-				<a href="home.php"> <img src="logo.jpg" align="left" height='100px'> </a>
+				<a href="home.php"> <img src="../asset/logo.jpg" align="left" height='100px'> </a>
 				<a href="home.php"> Home </a>
 				&nbsp | &nbsp
 				<a href="login.php"> Login </a>
 				&nbsp | &nbsp
 				<a href="registration.php"> Registration </a>
+				
 			</td>
 		</tr>
 		<tr>

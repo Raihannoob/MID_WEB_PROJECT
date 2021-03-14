@@ -8,7 +8,7 @@
         <table width='100%' >
             <tr>
             <td>
-                    <img src='logo.jpg' alt="home" height='100px'/>
+                    <img src='../asset/logo.jpg' alt="home" height='100px'/>
             </td> 
             <td align='right'>
                     <nav>

@@ -8,8 +8,8 @@
             
    		if($name != "" && $Quantity != "" && $Buyprice != "" && $Sellprice != "" )
 		{
-			if(file_exists('productinfo.json')){
-   			$current_data = file_get_contents('productinfo.json');
+			if(file_exists('../model/productinfo.json')){
+   			$current_data = file_get_contents('../model/productinfo.json');
 			$array_data = json_decode($current_data,true);
 			
   			$formdata = array(
@@ -25,7 +25,7 @@
 			$jsondata = json_encode($array_data,JSON_PRETTY_PRINT);
 		   
 
-		   if(file_put_contents('productinfo.json', $jsondata)) {
+		   if(file_put_contents('../model/productinfo.json', $jsondata)) {
                 
             echo "Product Insert Successfully";
 

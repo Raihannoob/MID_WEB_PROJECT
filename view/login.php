@@ -15,7 +15,7 @@ if (isset($_SESSION['flag'])) {
             <table width='100%'>
                 <tr>
                     <td>
-                        <img src='logo.jpg' alt="Image unavailable" height='50px' />
+                        <img src='../asset/logo.jpg' alt="Image unavailable" height='50px' />
                     </td>
                     <td align='right'>
                         <nav>
@@ -31,7 +31,7 @@ if (isset($_SESSION['flag'])) {
             <legend>
                 LOGIN
             </legend>
-            <form action='checklogin.php' method='POST'>
+            <form action='../controller/checklogin.php' method='POST'>
                 <table>
                     <tr>
                         <td>

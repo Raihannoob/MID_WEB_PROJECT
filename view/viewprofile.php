@@ -16,8 +16,8 @@ include('header.php');
                     <?php echo $_SESSION['name'] ?>
                 </td>
                 <td rowspan="8" align="center">
-                    <img src='user.png' height="150px" />
-                    <br><a href='#'>Change Picture</a>
+                    <img src='../asset/user.png' height="150px" />
+                    <br><a href='changepic.php'>Change Picture</a>
                 </td>
             </tr>
             <tr>
@@ -94,5 +94,5 @@ include('header.php');
 </table>
 <fieldset>
     <?php
-            include('footer.php');
+    include('footer.php');
     ?>

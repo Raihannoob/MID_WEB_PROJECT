@@ -13,8 +13,8 @@ include('header.php');
     <a href='viewproduct.php'>
         <h2>view All products</h2>
     </a>
-    <a href=''>
-        <h2></h2>
+    <a href='deleteproduct.php'>
+        <h2>Delete Product</h2>
     </a>
 
 </td>

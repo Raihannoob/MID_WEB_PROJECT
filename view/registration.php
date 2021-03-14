@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+
 <head>
     <title>Registration</title>
 </head>
+
 <body>
     <fieldset>
         <table width='100%' height=100>
             <tr>
                 <td>
-                    <img src='logo.jpg' alt="logo" height='100px' />
+                    <img src='../asset/logo.jpg' alt="logo" height='100px' />
                 </td>
                 <td align='right'>
                     <nav>
@@ -25,7 +27,7 @@
             <legend>
                 <b>REGISTRATION</b>
             </legend>
-            <form action='checkreg.php' method='POST'>
+            <form action='../controller/checkreg.php' method='POST'>
                 <table>
                     <tr>
                         <td>
@@ -132,21 +134,13 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type='submit' name ='submit' value='Submit'>
+                            <input type='submit' name='submit' value='Submit'>
                             <input type='reset' value='Reset'>
                         </td>
                     </tr>
                 </table>
             </form>
         </fieldset>
-    </fieldset>
-    <fieldset>
-        <center>
-            <label>
-                Copyright © 2021
-            </label>
-        </center>
-    </fieldset>
-</body>
-
-</html>
+<?php
+        include('footer.php');
+?>

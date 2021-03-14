@@ -9,7 +9,7 @@
                         <table width='100%'>
                             <tr>
                                 <td>
-                                    <img src='user.png' height='150px'>
+                                    <img src='../asset/user.png' height='150px'>
                                     <br>
                                     <input type='file' name='filepic' />
                                 </td>

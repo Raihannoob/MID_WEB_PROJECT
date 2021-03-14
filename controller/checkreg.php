@@ -78,7 +78,7 @@
         $_SESSION['month'] = $month;
         $_SESSION['year'] = $year;
         $_SESSION['flag'] =true;
-        header('location: login.php');
+        header('location: ../view/login.php');
     }
 else{
     echo 'Enter All information';

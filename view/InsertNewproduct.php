@@ -8,7 +8,7 @@ include('header.php');
             <td>
                 <fieldset>
                     <legend><b>Insert New Product Information</b></legend>
-                    <form action='insertnewproductcheck.php' method='post'>
+                    <form action='../controller/insertnewproductcheck.php' method='post'>
                         <table>
                             <tr>
                                 <td>

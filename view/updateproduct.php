@@ -5,7 +5,7 @@ include('header.php');
 <td>
     <fieldset>
         <legend><b>Update Product Information</b></legend>
-        <form action='updateproductcheck.php' method='post'>
+        <form action='../controller/updateproductcheck.php' method='post'>
             <table width='100%'>
                 <form action='' method=''>
                     <table>
