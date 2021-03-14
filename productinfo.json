@@ -4,5 +4,11 @@
         "Quantity": "100",
         "Buyprice": "1000 tk",
         "Sellprice": "1200tk"
+    },
+    {
+        "ProductName": "napa",
+        "Quantity": "12",
+        "Buyprice": "1000 tk",
+        "Sellprice": "200tk"
     }
 ]

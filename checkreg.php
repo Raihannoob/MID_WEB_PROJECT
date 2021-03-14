@@ -17,7 +17,8 @@
         {
             if(!((ord($name[$i]) >= 97 && ord($name[$i]) <= 122)) && !((ord($name[$i]) >= 65 && ord($name[$i]) <= 90)) && !(ord($name[$i]) == 32))
             {
-                echo 'Valid name will be added';break;
+                echo 'Enter Valid Name ';
+                break;
                 return;
             }
         }

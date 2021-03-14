@@ -30,11 +30,6 @@
         <br><br><br><br>
     </fieldset>
     <fieldset>
-        <center>
-            <label>
-                Copyright © 2021
-            </label>
-        </center>
-    </fieldset>
-</body>
-</html>
+<?php
+            include('footer.php');
+?>       
