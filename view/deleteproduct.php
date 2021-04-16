@@ -24,6 +24,7 @@ $data = getAllproduct();
                 <td><?= $data[$i]['Selling_Price'] ?></td>
                 <td><?= $data[$i]['Comment'] ?></td>
                 <td>
+                    <a href="updateproduct.php?id=<?= $data[$i]['Product_ID'] ?>"> EDIT </a> |
                     <a href="delete.php?id=<?= $data[$i]['Product_ID'] ?>"> DELETE </a>
                 </td>
             </tr>

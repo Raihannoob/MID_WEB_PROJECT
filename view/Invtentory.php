@@ -7,7 +7,7 @@ include('header.php');
         <h2>Insert new products</h2>
     </a>
 
-    <a href='updateproduct.php'>
+    <a href='deleteproduct.php'>
         <h2>Update products </h2>
     </a>
     <a href='viewproduct.php'>
@@ -21,6 +21,6 @@ include('header.php');
 </tr>
 </table>
 <fieldset>
-<?php
-            include('footer.php');
-?>    
+    <?php
+    include('footer.php');
+    ?>

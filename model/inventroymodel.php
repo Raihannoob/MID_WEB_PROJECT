@@ -39,3 +39,26 @@ function deleteProduct($id)
         return false;
     }
 }
+
+function updateProduct($user)
+{
+    $conn = getConnection();
+    $sql = "update product set Product_Name ='{$user['Product_Name']}', Quantity='{$user['Quantity']}', Buying_Price='{$user['Buying_Price']}', Selling_Price='{$user['Selling_Price']}', Comment='' where Product_ID={$user['id']}";
+
+    if (mysqli_query($conn, $sql)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+function getUserByID($id)
+{
+    $conn = getConnection();
+    $sql = "select * from product where Product_ID ='{$id}'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+
+    return $row;
+}

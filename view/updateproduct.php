@@ -1,6 +1,13 @@
 <?php
 $title = "Update Product";
 include('header.php');
+require_once('../model/inventroymodel.php');
+$id = $_GET["id"];
+$data = getUserByID($id);
+
+
+
+
 ?>
 <td>
     <fieldset>
@@ -9,12 +16,21 @@ include('header.php');
             <table width='100%'>
                 <form action='' method=''>
                     <table>
+
+                        <tr>
+                            <td>
+                                ID:
+                            </td>
+                            <td>
+                                <input type="text" name='ProductID' value=" <?php echo $data['Product_ID'] ?> ">
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 Product Name:
                             </td>
                             <td>
-                                <input type="text" name='ProductName' value="">
+                                <input type="text" name='ProductName' value=" <?php echo $data['Product_Name'] ?> ">
                             </td>
                         </tr>
                         <tr>
@@ -22,7 +38,7 @@ include('header.php');
                                 Quantity:
                             </td>
                             <td>
-                                <input type="text" name='Quantity' value="">
+                                <input type="text" name='Quantity' value="<?php echo $data['Quantity'] ?> ">
                             </td>
                         </tr>
                         <tr>
@@ -30,7 +46,7 @@ include('header.php');
                                 Buying Price:
                             </td>
                             <td>
-                                <input type="text" name='Buyprice' value="">
+                                <input type="text" name='Buyprice' value="<?php echo $data['Buying_Price'] ?> ">
                             </td>
                         </tr>
                         <tr>
@@ -40,7 +56,7 @@ include('header.php');
                                 Selling Price:
                             </td>
                             <td>
-                                <input type="text" name='Sellprice' value="">
+                                <input type="text" name='Sellprice' value="<?php echo $data['Selling_Price'] ?> ">
                             </td>
 
                         </tr>
@@ -59,6 +75,6 @@ include('header.php');
 </tr>
 </table>
 <fieldset>
-<?php
-            include('footer.php');
-?>  
+    <?php
+    include('footer.php');
+    ?>
