@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['flag1'] != true) {
-    header('location: login.php');
+ header('location: login.php');
 }
 ?>
 
@@ -51,6 +51,5 @@ if ($_SESSION['flag1'] != true) {
                     <li><a href='systemDetails.php'>system Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
                 </ul>
-        
+
             </td>
-        
