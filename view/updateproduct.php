@@ -3,7 +3,7 @@ $title = "Update Product";
 include('header.php');
 require_once('../model/inventroymodel.php');
 $id = $_GET["id"];
-$data = getUserByID($id);
+$data =  getproductByID($id);
 
 
 

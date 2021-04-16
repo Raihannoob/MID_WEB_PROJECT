@@ -53,7 +53,7 @@ function updateProduct($user)
 }
 
 
-function getUserByID($id)
+function getproductByID($id)
 {
     $conn = getConnection();
     $sql = "select * from product where Product_ID ='{$id}'";

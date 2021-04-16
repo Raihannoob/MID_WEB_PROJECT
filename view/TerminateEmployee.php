@@ -1,5 +1,5 @@
 <?php
-$title = "call For Metting";
+$title = "Terminate Employee";
 include('header.php');
 
 require_once('../model/TerminateEmployeemodel.php');
@@ -23,7 +23,7 @@ $data = getAllemployee();
                 <td><?= $data[$i]['Post'] ?></td>
                 <td><?= $data[$i]['Branch'] ?></td>
                 <td>
-                    <a href="terminateempcheck.php?id=<?= $data[$i]['Employee_ID'] ?>"> Terminate </a>
+                    <a href="../controller/terminateempcheck.php?id=<?= $data[$i]['Employee_ID'] ?>"> Terminate </a>
 
                 </td>
             </tr>
