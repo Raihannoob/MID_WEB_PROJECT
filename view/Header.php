@@ -48,7 +48,7 @@ if ($_SESSION['flag1'] != true) {
                     <li><a href='Databasesystem.php'>Database system</a></li>
                     <li><a href='TerminateEmployee.php'>Terminate Employee</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
-                    <li><a href='systemDetails.php'>system Details</a></li>
+                    <li><a href='addnewemployee.php'>Add New Employee</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
                 </ul>
 

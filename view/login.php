@@ -38,7 +38,9 @@ if (isset($_SESSION['flag'])) {
                             User Name:
                         </td>
                         <td>
-                            <input type="text" name='logusername'>
+                            <input type="text" name='logusername' value="<?php if (isset($_COOKIE['logusername'])) {
+                                                                                echo $_COOKIE['logusername'];
+                                                                            } ?>">
                         </td>
                     </tr>
                     <tr>
@@ -46,7 +48,9 @@ if (isset($_SESSION['flag'])) {
                             Password:
                         </td>
                         <td>
-                            <input type="password" name='logpassword'>
+                            <input type="password" name='logpassword' value="<?php if (isset($_COOKIE['logpassword'])) {
+                                                                                    echo $_COOKIE['logpassword'];
+                                                                                } ?>">
                         </td>
                     </tr>
                     <tr>
@@ -56,12 +60,14 @@ if (isset($_SESSION['flag'])) {
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type='checkbox'>Remember Me
+                            <input type='checkbox' name="remember" <?php if (isset($_COOKIE['logusername'])) {
+                                                                        echo "checked";
+                                                                    } ?>> Remember Me
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type='submit' name ='submit' value='Submit'>
+                            <input type='submit' name='submit' value='Submit'>
                             <a href='forgetpassword.php'>Forgot Password?</a>
                         </td>
                     </tr>

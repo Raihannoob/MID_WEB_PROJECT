@@ -55,6 +55,6 @@ if (isset($_POST['submit'])) {
 			echo "Db error";
 		}
 	} else {
-		echo "Product Insert unsuccessfully";
+		echo "Please Insert All Information";
 	}
 }

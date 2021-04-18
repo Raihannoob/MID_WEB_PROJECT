@@ -26,3 +26,15 @@ function deleteEmployee($id)
         return false;
     }
 }
+
+function insertNewemployee($user)
+{
+    $conn = getConnection();
+    $sql = "insert into employee_list values('', '{$user['Name']}', '{$user['Post']}', '{$user['Branch']}')";
+
+    if (mysqli_query($conn, $sql)) {
+        return true;
+    } else {
+        return false;
+    }
+}

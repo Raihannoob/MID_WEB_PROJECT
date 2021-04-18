@@ -8,6 +8,20 @@ if (isset($_POST['logusername']) && isset($_POST['logpassword'])) {
     } else {
 
         if ($username == $_SESSION['username'] && $password == $_SESSION['password']) {
+
+
+            if (!empty($_POST['remember'])) {
+                setcookie('logusername', $username, time() + (86400 * 30)); // 86400 = 1 day
+                setcookie('logpassword', $password, time() + (86400 * 30));
+            } else {
+                if (isset($_COOKIE['logusername'])) {
+                    setcookie('logusername', '');
+                }
+                if (isset($_COOKIE['logpassword'])) {
+                    setcookie('logpassword', '');
+                }
+            }
+
             $_SESSION['flag1'] = true;
             header('location: ../view/dashboard.php');
         } else {
