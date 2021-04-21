@@ -32,6 +32,7 @@ if (isset($_SESSION['flag'])) {
                 LOGIN
             </legend>
             <form action='../controller/checklogin.php' method='POST'>
+                <script type="text/javascript" src="log.js"></script>
                 <table>
                     <tr>
                         <td>
@@ -40,7 +41,8 @@ if (isset($_SESSION['flag'])) {
                         <td>
                             <input type="text" name='logusername' value="<?php if (isset($_COOKIE['logusername'])) {
                                                                                 echo $_COOKIE['logusername'];
-                                                                            } ?>">
+                                                                            } ?>" id='username' onblur="usernamevalidation()" onkeyup="usernamevalidation()">
+                            <span id="susername" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -50,7 +52,8 @@ if (isset($_SESSION['flag'])) {
                         <td>
                             <input type="password" name='logpassword' value="<?php if (isset($_COOKIE['logpassword'])) {
                                                                                     echo $_COOKIE['logpassword'];
-                                                                                } ?>">
+                                                                                } ?>" id='password' onblur="passwordvalidation()" onkeyup="passwordvalidation()">
+                            <span id="spass" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>

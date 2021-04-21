@@ -9,7 +9,7 @@ include('header.php');
     <h1 id="h1">Insert New Product </h1>
     <fieldset>
 
-        <form action='../controller/insertnewproductcheck.php' method='post' onsubmit="validateform()">
+        <form action='../controller/insertnewproductcheck.php' method='post' onsubmit="return validateform()">
             <script type="text/javascript" src="insertproduct.js"></script>
             <table>
                 <tr>

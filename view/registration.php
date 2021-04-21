@@ -27,14 +27,16 @@
             <legend>
                 <b>REGISTRATION</b>
             </legend>
-            <form action='../controller/checkreg.php' method='POST'>
+            <form action='../controller/checkreg.php' method='POST' onsubmit="return validateform()">
+                <script type="text/javascript" src="reg.js"></script>
                 <table>
                     <tr>
                         <td>
                             Name:
                         </td>
                         <td>
-                            <input type="text" name='name'>
+                            <input type="text" name='name' id='name' onblur="namevalidation()" onkeyup="namevalidation()">
+                            <span id="sname" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -47,7 +49,8 @@
                             Email:
                         </td>
                         <td>
-                            <input type="email" name='email'>
+                            <input type="email" name='email' id='email' onkeyup="validateEmail()" onblur="validateEmail()">
+                            <span id="semail" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +63,8 @@
                             Phone Number:
                         </td>
                         <td>
-                            <input type="text" name='phonenumber'>
+                            <input type="text" name='phonenumber' id='phone' onkeyup="validatephone()" onblur="validatePhone()">
+                            <span id="sphone" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -73,7 +77,8 @@
                             Username:
                         </td>
                         <td>
-                            <input type="username" name='username'>
+                            <input type="username" name='username' id='username' onblur="usernamevalidation()" onkeyup="usernamevalidation()">
+                            <span id="susername" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -86,7 +91,8 @@
                             Password:
                         </td>
                         <td>
-                            <input type="password" name='password'>
+                            <input type="password" name='password' id='password' onblur="passwordvalidation()" onkeyup="passwordvalidation()">
+                            <span id="spass" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -99,7 +105,8 @@
                             Confirm Password:
                         </td>
                         <td>
-                            <input type="password" name='confirmpassword'>
+                            <input type="password" name='confirmpassword' id='confirmpassword' onblur='validateRepassword()' onkeyup='validateRepassword()'>
+                            <span id="scpass" style="color:red"> </span>
                         </td>
                     </tr>
                     <tr>
@@ -141,6 +148,6 @@
                 </table>
             </form>
         </fieldset>
-<?php
+        <?php
         include('footer.php');
-?>
+        ?>

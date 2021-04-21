@@ -1,9 +1,7 @@
 function productNameValidation()
 {
     const name= document.getElementById('pname').value;
- 
- 
-    if(name == ''){
+    if(name == ""){
         document.getElementById('h1').innerHTML = 'Empty Product name field ';        
     }
     else if(name.length <2){

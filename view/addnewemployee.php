@@ -5,7 +5,7 @@ include('header.php');
 <td>
     <h1 id="h1">Insert New Employee </h1>
     <fieldset>
-        <form action='../controller/itnsertnewemployeecheck.php' method='post' onSubmit="validateform()">
+        <form action='../controller/itnsertnewemployeecheck.php' method='post' onsubmit="return validateform()">
             <script type="text/javascript" src="insertemployee.js"></script>
             <table>
                 <tr>
