@@ -10,9 +10,10 @@ $data =  getproductByID($id);
 
 ?>
 <td>
+    <h1 id="h1">Update Product Information </h1>
     <fieldset>
-        <legend><b>Update Product Information</b></legend>
         <form action='../controller/updateproductcheck.php' method='post'>
+            <script type="text/javascript" src="../view/insertproduct.js"></script>
             <table width='100%'>
                 <form action='' method=''>
                     <table>
@@ -22,7 +23,7 @@ $data =  getproductByID($id);
                                 ID:
                             </td>
                             <td>
-                                <input type="text" name='ProductID' value=" <?php echo $data['Product_ID'] ?> ">
+                                <input type="text" name='ProductID' value=" <?php echo $data['Product_ID'] ?>">
                             </td>
                         </tr>
                         <tr>
@@ -30,7 +31,7 @@ $data =  getproductByID($id);
                                 Product Name:
                             </td>
                             <td>
-                                <input type="text" name='ProductName' value=" <?php echo $data['Product_Name'] ?> ">
+                                <input type="text" name='ProductName' value=" <?php echo $data['Product_Name'] ?> " id='pname' onblur="productNameValidation()">
                             </td>
                         </tr>
                         <tr>
@@ -38,7 +39,7 @@ $data =  getproductByID($id);
                                 Quantity:
                             </td>
                             <td>
-                                <input type="text" name='Quantity' value="<?php echo $data['Quantity'] ?> ">
+                                <input type="text" name='Quantity' value="<?php echo $data['Quantity'] ?> " id="Quantity" onblur=" QuantityValidate()">
                             </td>
                         </tr>
                         <tr>
@@ -46,7 +47,7 @@ $data =  getproductByID($id);
                                 Buying Price:
                             </td>
                             <td>
-                                <input type="text" name='Buyprice' value="<?php echo $data['Buying_Price'] ?> ">
+                                <input type="text" name='Buyprice' value="<?php echo $data['Buying_Price'] ?>" id='bprice' onblur="BuypriceValidate()">
                             </td>
                         </tr>
                         <tr>
@@ -56,13 +57,13 @@ $data =  getproductByID($id);
                                 Selling Price:
                             </td>
                             <td>
-                                <input type="text" name='Sellprice' value="<?php echo $data['Selling_Price'] ?> ">
+                                <input type="text" name='Sellprice' value="<?php echo $data['Selling_Price'] ?> " id='sprice' onblur="SellpriceValidate()">
                             </td>
 
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type='submit' name='submit ' value='submit'>
+                                <input type='submit' name='submit ' value='submit' onclick="productNameValidation();QuantityValidate();BuypriceValidate();SellpriceValidate();">
                                 <input type='Reset' value='Reset'>
                             </td>
                         </tr>

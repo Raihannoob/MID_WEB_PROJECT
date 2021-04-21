@@ -3,16 +3,17 @@ $title = "Add New Employee";
 include('header.php');
 ?>
 <td>
+    <h1 id="h1">Insert New Employee </h1>
     <fieldset>
-        <legend><b>Add New Employee</b></legend>
-        <form action='../controller/itnsertnewemployeecheck.php' method='post'>
+        <form action='../controller/itnsertnewemployeecheck.php' method='post' onSubmit="validateform()">
+            <script type="text/javascript" src="insertemployee.js"></script>
             <table>
                 <tr>
                     <td>
                         Name:
                     </td>
                     <td>
-                        <input type="text" name='Name'>
+                        <input type="text" name='Name' id='ename' onkeyup="employeeNameValidation()">
                     </td>
                 </tr>
                 <tr>
@@ -20,7 +21,7 @@ include('header.php');
                         Employee Post:
                     </td>
                     <td>
-                        <input type="text" name='ePost'>
+                        <input type="text" name='ePost' id='ePost' onblur="EmployeePostValidation()">
                     </td>
                 </tr>
                 <tr>
@@ -28,7 +29,7 @@ include('header.php');
                         Branch:
                     </td>
                     <td>
-                        <input type="text" name='Branch'>
+                        <input type="text" name='Branch' id='branch' onblur="branchValidation()">
                     </td>
                 </tr>
                 <tr>
