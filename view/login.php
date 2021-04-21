@@ -31,7 +31,7 @@ if (isset($_SESSION['flag'])) {
             <legend>
                 LOGIN
             </legend>
-            <form action='../controller/checklogin.php' method='POST'>
+            <form action='../controller/checklogin.php' method='POST' onsubmit="return validateform()">
                 <script type="text/javascript" src="log.js"></script>
                 <table>
                     <tr>
@@ -70,7 +70,7 @@ if (isset($_SESSION['flag'])) {
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type='submit' name='submit' value='Submit'>
+                            <input type='submit' name='submit' value='submit'>
                             <a href='forgetpassword.php'>Forgot Password?</a>
                         </td>
                     </tr>

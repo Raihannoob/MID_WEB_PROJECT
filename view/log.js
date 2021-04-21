@@ -35,3 +35,23 @@ function passwordvalidation() {
          document.getElementById('spass').innerHTML = "**You can use this Password";
     }
 }
+function validateform(){
+const pass = document.getElementById('password').value;
+const name = document.getElementById('username').value;
+if (name == null || name == "") {
+    alert("Name can't be blank");  
+        return false; 
+    }
+    else if (pass == null || pass == "") {
+    alert("Password can't be blank");  
+       return false;    
+    
+    }
+    else {
+         alert("Are You Sure You Want to LogIN");
+          return true;
+     }
+
+
+
+}

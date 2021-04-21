@@ -24,8 +24,10 @@ $data = getAlladmin();
                 <td><?= $data[$i]['Post'] ?></td>
                 <td><?= $data[$i]['Branch'] ?></td>
                 <td>
-                    <a href=''>Call</a></li>
+                    <button onclick="change_text()"> Call </button>
+
                 </td>
+                <p id='demo' style="color:red"></p>
             </tr>
 
 
@@ -37,6 +39,15 @@ $data = getAlladmin();
 </tr>
 </table>
 <fieldset>
+    <script>
+        "use strict"
+
+        function change_text() {
+            document.getElementById("demo").innerHTML = "This Function is not Available Now";
+        }
+    </script>
+
+
     <?php
     include('footer.php');
     ?>

@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>PUBLIC HOME</title>
 </head>
+
 <body>
     <fieldset>
-        <table width='100%' >
+        <table width='100%'>
             <tr>
-            <td>
-                    <img src='../asset/logo.jpg' alt="home" height='100px'/>
-            </td> 
-            <td align='right'>
+                <td>
+                    <img src='../asset/logo.jpg' alt="home" height='100px' />
+                </td>
+                <td align='right'>
                     <nav>
                         <a href='home.php'>Home</a> |
                         <a href='login.php'>Log In</a> |
-                        <a href='registration.php'>Registration</a>
+                        <a href='registration.php'>Registration</a> |
+                        <a href='AboutUs.php'>About Us</a>
                     </nav>
-            </td>
+                </td>
             </tr>
         </table>
     </fieldset>
@@ -30,6 +33,6 @@
         <br><br><br><br>
     </fieldset>
     <fieldset>
-<?php
-            include('footer.php');
-?>       
+        <?php
+        include('footer.php');
+        ?>

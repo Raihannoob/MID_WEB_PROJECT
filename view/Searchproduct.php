@@ -1,6 +1,5 @@
 <?php
 $name = $_REQUEST['name'];
-
 $conn = mysqli_connect('localhost', 'root', '', 'webtech');
 $sql = "select * from product where Product_Name like '%{$name}%'";
 $result = mysqli_query($conn, $sql);
