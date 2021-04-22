@@ -10,7 +10,7 @@
         <table width='100%'>
             <tr>
                 <td>
-                    <img src='../asset/logo.jpg' alt="home" height='100px' />
+                    <img id='logo' src='../asset/logo.jpg' height='100px' onmouseover="setnewimg()" onmouseout="setoldimg()">
                 </td>
                 <td align='right'>
                     <nav>
@@ -26,6 +26,7 @@
     <fieldset>
         <br> <br><br>
         <label>
+
             <p>
                 The pharmacy management system, also known as the pharmacy information system, is a system that stores data and enables functionality that organizes and maintains the medication use process within pharmacies.
 
@@ -48,6 +49,14 @@
 
             function change_text1() {
                 document.getElementById("demo1").innerHTML = "1.Shantinagar 2.Banani 3.Gulsan 4.Bailyroad 5.Khilgao";
+            }
+
+            function setnewimg() {
+                document.getElementById('logo').src = '../asset/logo1.jpg';
+            }
+
+            function setoldimg() {
+                document.getElementById('logo').src = '../asset/logo.jpg';
             }
         </script>
 
