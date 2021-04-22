@@ -135,7 +135,7 @@ function passwordvalidation() {
 
     else if (pass.length <8) {
 
-         document.getElementById('spass').innerHTML = '**User name must be Gereater then 8 charecter';
+         document.getElementById('spass').innerHTML = '**Password  must be Gereater then 8 charecter';
          
      }  
     
@@ -157,5 +157,7 @@ function passwordvalidation() {
 			else{
 				document.getElementById('scpass').innerHTML = "**Confirm Password Matched ! ";
 			}
-		}
+}
+        
+
 

@@ -4,19 +4,19 @@ function employeeNameValidation()
  
  
     if(name == ''){
-        document.getElementById('h1').innerHTML = 'Please Enter Employye name field ';        
+        document.getElementById('sname').innerHTML = 'Please Enter Employye name field ';        
     }
     
     else if (name >= 'a' && name <= 'z' || name >= 'A' && name <= 'Z') {
-        document.getElementById('h1').innerHTML = name;
+        document.getElementById('sname').innerHTML = name;
     }
         
  else if(name.length <2){
-        document.getElementById('h1').innerHTML = 'Name required at least two letters';   
+        document.getElementById('sname').innerHTML = 'Name required at least two letters';   
     }
     
     else{
-        document.getElementById('h1').innerHTML =   'Employye name is invalid';
+        document.getElementById('sname').innerHTML =   'Employye name is invalid';
     }
 }
 
@@ -26,15 +26,15 @@ function EmployeePostValidation()
  
  
     if(name == ''){
-        document.getElementById('h1').innerHTML = 'Please Fillup Employee Post field ';        
+        document.getElementById('spost').innerHTML = 'Please Fillup Employee Post field ';        
     }
     
     else if (name >= 'a' && name <= 'z' || name >= 'A' && name <= 'Z') {
-        document.getElementById('h1').innerHTML = name;
+        document.getElementById('spost').innerHTML = name;
      }
     
     else{
-        document.getElementById('h1').innerHTML =   'Employeee Post  Name is invalid';
+        document.getElementById('spost').innerHTML =   'Employeee Post  Name is invalid';
     }
 }
 
@@ -44,15 +44,15 @@ function branchValidation()
  
  
     if(name == ''){
-        document.getElementById('h1').innerHTML = 'Please Enter Branch name field ';        
+        document.getElementById('sbranch').innerHTML = 'Please Enter Branch name field ';        
     }
     
     else if (name >= 'a' && name <= 'z' || name >= 'A' && name <= 'Z') {
-        document.getElementById('h1').innerHTML = name;
+        document.getElementById('sbranch').innerHTML = name;
      }
     
     else{
-        document.getElementById('h1').innerHTML =   'Branch name is invalid';
+        document.getElementById('sbranch').innerHTML =   'Branch name is invalid';
     }
 }
 

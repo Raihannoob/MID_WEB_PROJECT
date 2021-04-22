@@ -12,8 +12,8 @@ $data =  getproductByID($id);
 <td>
     <h1 id="h1">Update Product Information </h1>
     <fieldset>
-        <form action='../controller/updateproductcheck.php' method='post'>
-            <script type="text/javascript" src="../view/insertproduct.js"></script>
+        <form action='../controller/updateproductcheck.php' method='post' onsubmit="return validateform()">
+            <script type="text/javascript" src="insertproduct.js"></script>
             <table width='100%'>
                 <form action='' method=''>
                     <table>
@@ -32,6 +32,7 @@ $data =  getproductByID($id);
                             </td>
                             <td>
                                 <input type="text" name='ProductName' value=" <?php echo $data['Product_Name'] ?> " id='pname' onblur="productNameValidation()">
+                                <span id="spname" style="color:red"> </span>
                             </td>
                         </tr>
                         <tr>
@@ -40,6 +41,7 @@ $data =  getproductByID($id);
                             </td>
                             <td>
                                 <input type="text" name='Quantity' value="<?php echo $data['Quantity'] ?> " id="Quantity" onblur=" QuantityValidate()">
+                                <span id="spquantity" style="color:red"> </span>
                             </td>
                         </tr>
                         <tr>
@@ -48,6 +50,7 @@ $data =  getproductByID($id);
                             </td>
                             <td>
                                 <input type="text" name='Buyprice' value="<?php echo $data['Buying_Price'] ?>" id='bprice' onblur="BuypriceValidate()">
+                                <span id="spbprice" style="color:red"> </span>
                             </td>
                         </tr>
                         <tr>
@@ -58,6 +61,7 @@ $data =  getproductByID($id);
                             </td>
                             <td>
                                 <input type="text" name='Sellprice' value="<?php echo $data['Selling_Price'] ?> " id='sprice' onblur="SellpriceValidate()">
+                                <span id="spsellprice" style="color:red"> </span>
                             </td>
 
                         </tr>
@@ -76,6 +80,12 @@ $data =  getproductByID($id);
 </tr>
 </table>
 <fieldset>
+
+
+
+
+
+
     <?php
     include('footer.php');
     ?>

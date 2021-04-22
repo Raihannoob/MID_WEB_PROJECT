@@ -2,17 +2,17 @@ function productNameValidation()
 {
     const name= document.getElementById('pname').value;
     if(name == ""){
-        document.getElementById('h1').innerHTML = 'Empty Product name field ';        
+        document.getElementById('spname').innerHTML = 'Please Fill up Product name field ';        
     }
     else if(name.length <2){
-        document.getElementById('h1').innerHTML = 'Name required at least two letters';   
+        document.getElementById('spname').innerHTML = 'Product Name required at least two letters';   
     }
     else if (name >= 'a' && name <= 'z' || name >= 'A' && name <= 'Z') {
-        document.getElementById('h1').innerHTML = name;
+        document.getElementById('spname').innerHTML = "you can use This Name";
      }
     
     else{
-        document.getElementById('h1').innerHTML =   'Product Name is invalid';
+        document.getElementById('spname').innerHTML =   'Product Name is invalid';
     }
 }
 
@@ -21,10 +21,10 @@ function QuantityValidate() {
     const Quantity = document.getElementById('Quantity').value;
     
     if (Quantity == '') {
-        document.getElementById('h1').innerHTML = 'Please Fillup Quantity field ';
+        document.getElementById('spquantity').innerHTML = 'Please Fillup Quantity field ';
     }  
     else {
-        document.getElementById('h1').innerHTML =  Quantity;
+        document.getElementById('spquantity').innerHTML =  Quantity;
     }
 }
 
@@ -32,10 +32,10 @@ function BuypriceValidate() {
     const bprice = document.getElementById('bprice').value;
     
     if (bprice == '') {
-        document.getElementById('h1').innerHTML = 'Please Fillup Buy price field ';
+        document.getElementById('spbprice').innerHTML = 'Please Fillup Buy price field ';
     }  
     else {
-        document.getElementById('h1').innerHTML =  bprice;
+        document.getElementById('spbprice').innerHTML =  bprice;
     }
 }
 
@@ -44,10 +44,10 @@ function SellpriceValidate() {
     const sprice = document.getElementById('sprice').value;
     
     if (sprice == '') {
-        document.getElementById('h1').innerHTML = 'Please Fillup Sell price field ';
+        document.getElementById('spsellprice').innerHTML = 'Please Fillup Sell price field ';
     }  
     else {
-        document.getElementById('h1').innerHTML = sprice;
+        document.getElementById('spsellprice').innerHTML = sprice;
     }
 }
 

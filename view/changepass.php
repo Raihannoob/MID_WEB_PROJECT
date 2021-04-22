@@ -3,22 +3,20 @@ session_start();
 if ($_SESSION['flag1'] != true) {
     header('location: login.php');
 }
-        
+
 if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST['retypenewpassword'])) {
-    if ($_POST['newpassword'] == $_POST['oldpassword' ]) {
+    if ($_POST['newpassword'] == $_POST['oldpassword']) {
         echo "New Password should not be same as the Current Password\r\n";
-        $s=false;
+        $s = false;
     }
-    
+
     if ($_POST['newpassword'] != $_POST['retypenewpassword']) {
         echo "New Password must match with the Retyped Password";
         $s = false;
-        
-    } 
-    else {
+    } else {
         $s = true;
     }
-    if( $s==true){
+    if ($s == true) {
         echo "New Password Change Successfully";
     }
 }
@@ -79,14 +77,16 @@ if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST
                     <legend>
                         Change Password
                     </legend>
-                    <form action='' method='post'>
+                    <form action='' method='post' onsubmit="return validateform()">
+                        <script type="text/javascript" src="passwordchange.js"></script>
                         <table>
                             <tr>
                                 <td>
                                     Old Password:
                                 </td>
                                 <td>
-                                    <input type="text" name='oldpassword'>
+                                    <input type="password" name='oldpassword' id='oldpassword' onkeyup="validateoldepassword()" onblur="validateoldepassword()">
+                                    <span id="sold" style="color:red"> </span>
                                 </td>
                             </tr>
                             <tr>
@@ -94,7 +94,8 @@ if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST
                                     New Password:
                                 </td>
                                 <td>
-                                    <input type="password" name='newpassword'>
+                                    <input type="password" name='newpassword' id='newpassword' onkeyup="validatenewepassword()" onblur="validatenewepassword()">
+                                    <span id="snew" style="color:red"> </span>
                                 </td>
                             </tr>
                             <tr>
@@ -102,7 +103,8 @@ if (isset($_POST['oldpassword']) && isset($_POST['newpassword']) && isset($_POST
                                     Retype New Password:
                                 </td>
                                 <td>
-                                    <input type="password" name='retypenewpassword'>
+                                    <input type="password" name='retypenewpassword' id='repass' onkeyup="validateRepassword()" onblur="validateRepassword()">
+                                    <span id="sre" style="color:red"> </span>
                                 </td>
                             </tr>
                             <tr>

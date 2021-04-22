@@ -14,6 +14,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='Name' id='ename' onkeyup="employeeNameValidation()">
+                        <span id="sname" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
@@ -22,6 +23,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='ePost' id='ePost' onblur="EmployeePostValidation()">
+                        <span id="spost" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
@@ -30,6 +32,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='Branch' id='branch' onblur="branchValidation()">
+                        <span id="sbranch" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>

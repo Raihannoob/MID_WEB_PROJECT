@@ -18,6 +18,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='ProductName' id='pname' onkeyup="productNameValidation()">
+                        <span id="spname" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
@@ -26,6 +27,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='Quantity' id="Quantity" onblur=" QuantityValidate()">
+                        <span id="spquantity" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
@@ -34,6 +36,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='Buyprice' id='bprice' onblur="BuypriceValidate()">
+                        <span id="spbprice" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
@@ -44,6 +47,7 @@ include('header.php');
                     </td>
                     <td>
                         <input type="text" name='Sellprice' id='sprice' onblur="SellpriceValidate()">
+                        <span id="spsellprice" style="color:red"> </span>
                     </td>
 
                 </tr>
