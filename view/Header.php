@@ -62,12 +62,16 @@ if ($_SESSION['flag1'] != true) {
                     <li><a href='UpdateInformation.php'>Update Information</a></li>
                     <li><a href='MonitoringSell.php'>Monitoring cell</a></li>
                     <li><a href='MedicineStock.php'>Medicine Stock</a></li>
+                    <li><a href='Setsalary.php'>Set Salary</a></li>
                     <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
+                    <li><a href='Contactstaff.php'>contact with Staff</a></li>
+                    <li><a href='AcceptRejectforforeignMedicine.php'>Accept/Reject for foreign Medicine</a></li>
                     <li><a href='search.php'>Search Medicine</a></li>
                     <li><a href='TerminateEmployee.php'>Terminate Employee</a></li>
                     <li><a href='Invtentory.php'>Invtentory</a></li>
-                    <li><a href='addnewemployee.php'>Add New Employee</a></li>
+                    <li><a href='addnewadmin.php'>Add New Admin</a></li>
+                    <li><a href='ViewCustomersDetails.php'>View Customers Details</a></li>
                     <li><a href='Connectwebsitewithsocialmedia.php'>Connect website with social media</a></li>
                 </ul>
 

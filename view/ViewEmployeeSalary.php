@@ -1,25 +1,23 @@
 <?php
 $title = "View Employee Salary";
 include('header.php');
-require_once('../model/monitoringcellmodel.php');
+require_once('../model/salarymodel.php');
 $data = getAllempoloyeeSalary();
 ?>
 <td>
     <table border="1px solid black" width='80%' align='center'>
         <tr>
             <th>Salary ID</th>
-            <th>Name</th>
-            <th>Branch</th>
-            <th>Position</th>
-            <th>Salary</th>
+            <th>Employee Type</th>
+            <th>Ammount</th>
+            <th>Month</th>
         </tr>
         <?php for ($i = 0; $i < count($data); $i++) { ?>
             <tr>
-                <td><?= $data[$i]['ID'] ?></td>
-                <td><?= $data[$i]['Name'] ?></td>
-                <td><?= $data[$i]['Branch'] ?></td>
-                <td><?= $data[$i]['Position'] ?></td>
-                <td><?= $data[$i]['Salary'] ?></td>
+                <td><?= $data[$i]['sal_id'] ?></td>
+                <td><?= $data[$i]['etype'] ?></td>
+                <td><?= $data[$i]['amount'] ?></td>
+                <td><?= $data[$i]['month'] ?></td>
             </tr>
 
         <?php } ?>

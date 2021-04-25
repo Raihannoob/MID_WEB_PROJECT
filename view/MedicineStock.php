@@ -10,19 +10,21 @@ $data = getAllproduct();
         <tr>
             <th>Product ID</th>
             <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Buying Price</th>
-            <th>Selling Price</th>
-            <th>Comment About stock</th>
+            <th>Product Type</th>
+            <th>Manufacturer</th>
+            <th>Stock</th>
+            <th>MRP</th>
+
         </tr>
         <?php for ($i = 0; $i < count($data); $i++) { ?>
             <tr>
-                <td><?= $data[$i]['Product_ID'] ?></td>
-                <td><?= $data[$i]['Product_Name'] ?></td>
-                <td><?= $data[$i]['Quantity'] ?></td>
-                <td><?= $data[$i]['Buying_Price'] ?></td>
-                <td><?= $data[$i]['Selling_Price'] ?></td>
-                <td><?= $data[$i]['Comment'] ?></td>
+                <td><?= $data[$i]['p_id'] ?></td>
+                <td><?= $data[$i]['p_name'] ?></td>
+                <td><?= $data[$i]['p_type'] ?></td>
+                <td><?= $data[$i]['manufacturer'] ?></td>
+                <td><?= $data[$i]['stock'] ?></td>
+                <td><?= $data[$i]['stock'] ?></td>
+
             </tr>
 
         <?php } ?>

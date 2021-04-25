@@ -8,18 +8,18 @@ $data = getAllexpences();
     <table border="1px solid black" width='80%' align='center'>
         <tr>
             <th>Expense ID</th>
-            <th>Expense Title</th>
-            <th>Date</th>
-            <th>Branch</th>
-            <th>Expense</th>
+            <th>Name</th>
+            <th>Buyprice</th>
+            <th>sellprice</th>
+            <th>Displayable</th>
         </tr>
         <?php for ($i = 0; $i < count($data); $i++) { ?>
             <tr>
-                <td><?= $data[$i]['ID'] ?></td>
-                <td><?= $data[$i]['Expense_Title'] ?></td>
-                <td><?= $data[$i]['Date'] ?></td>
-                <td><?= $data[$i]['Branch'] ?></td>
-                <td><?= $data[$i]['Expense'] ?></td>
+                <td><?= $data[$i]['id'] ?></td>
+                <td><?= $data[$i]['name'] ?></td>
+                <td><?= $data[$i]['buyingPrice'] ?></td>
+                <td><?= $data[$i]['sellingPrice'] ?></td>
+                <td><?= $data[$i]['displayable'] ?></td>
             </tr>
 
         <?php } ?>

@@ -5,7 +5,7 @@ require_once('db.php');
 function getAllproduct()
 {
     $conn = getConnection();
-    $sql = "select * from product";
+    $sql = "select * from products";
     $result = mysqli_query($conn, $sql);
     $data1 = [];
 
