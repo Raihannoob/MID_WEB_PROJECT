@@ -23,7 +23,7 @@ $data = getAllproduct();
                 <td><?= $data[$i]['p_type'] ?></td>
                 <td><?= $data[$i]['manufacturer'] ?></td>
                 <td><?= $data[$i]['stock'] ?></td>
-                <td><?= $data[$i]['stock'] ?></td>
+                <td><?= $data[$i]['mrp'] ?></td>
 
             </tr>
 

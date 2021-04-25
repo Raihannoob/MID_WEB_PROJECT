@@ -3,17 +3,19 @@ require_once('../model/inventroymodel.php');
 
 if (isset($_POST['submit'])) {
 	$name       = $_POST['ProductName'];
-	$Quantity   = $_POST['Quantity'];
-	$Buyprice   = $_POST['Buyprice'];
-	$Sellprice  = $_POST['Sellprice'];
+	$ptype   = $_POST['ptype'];
+	$Mannufacture   = $_POST['Mannufacture'];
+	$Stock  = $_POST['Stock'];
+	$mrp        = $_POST['MRP'];
 
 
-	if ($name != "" && $Quantity != "" && $Buyprice != "" && $Sellprice != "") {
+	if ($name != "" && $ptype != "" && $Mannufacture != "" && $Stock != "" && $mrp != "") {
 		$user = [
-			'ProductName'	=> $name,
-			'Quantity'		=> $Quantity,
-			'Buyprice'		=> $Buyprice,
-			'Sellprice'		=> $Sellprice
+			'p_name'			=> $name,
+			'p_type'			=> $ptype,
+			'manufacturer'		=> $Mannufacture,
+			'stock'				=> $Stock,
+			'mrp' 				=> $mrp
 		];
 		$status = insertProduct($user);
 		if ($status) {

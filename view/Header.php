@@ -63,7 +63,6 @@ if ($_SESSION['flag1'] != true) {
                     <li><a href='MonitoringSell.php'>Monitoring cell</a></li>
                     <li><a href='MedicineStock.php'>Medicine Stock</a></li>
                     <li><a href='Setsalary.php'>Set Salary</a></li>
-                    <li><a href='ExpiredItems.php'>Expired Items</a></li>
                     <li><a href='contactwithadmin.php'>contact with admin</a></li>
                     <li><a href='Contactstaff.php'>contact with Staff</a></li>
                     <li><a href='AcceptRejectforforeignMedicine.php'>Accept/Reject for foreign Medicine</a></li>

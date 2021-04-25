@@ -1,17 +1,19 @@
 <?php
 require_once('../model/inventroymodel.php');
 $Product_Name   = $_POST['ProductName'];
-$Quantity = $_POST['Quantity'];
-$Buying_Price = $_POST['Buyprice'];
-$Selling_Price = $_POST['Sellprice'];
+$Quantity = $_POST['ptype'];
+$Buying_Price = $_POST['Mannufacture'];
+$Selling_Price = $_POST['Stock'];
+$mrp             =  $_POST['MRP'];
 $id = $_POST['ProductID'];
 
 $user = [
-    'id'              => $id,
-    'Product_Name'    => $Product_Name,
-    'Quantity'        => $Quantity,
-    'Buying_Price'    => $Buying_Price,
-    'Selling_Price'   => $Selling_Price
+    'p_id'              => $id,
+    'p_name'    => $Product_Name,
+    'p_type'        => $Quantity,
+    'manufacturer'    => $Buying_Price,
+    'stock'   => $Selling_Price,
+    'mrp'     => $mrp
 ];
 $status = updateProduct($user);
 if ($status) {

@@ -6,7 +6,7 @@ require_once('db.php');
 function insertProduct($user)
 {
     $conn = getConnection();
-    $sql = "insert into product values('', '{$user['ProductName']}', '{$user['Quantity']}', '{$user['Buyprice']}', '{$user['Sellprice']}','')";
+    $sql = "insert into products values('', '{$user['p_name']}', '{$user['p_type']}', '{$user['manufacturer']}', '{$user['stock']}','{$user['mrp']}')";
 
     if (mysqli_query($conn, $sql)) {
         return true;
@@ -18,7 +18,7 @@ function insertProduct($user)
 function getAllproduct()
 {
     $conn = getConnection();
-    $sql = "select * from product";
+    $sql = "select * from products";
     $result = mysqli_query($conn, $sql);
     $data1 = [];
 
@@ -31,7 +31,7 @@ function getAllproduct()
 function deleteProduct($id)
 {
     $conn = getConnection();
-    $sql = "delete from product where Product_ID ='{$id}'";
+    $sql = "delete from products where p_id ='{$id}'";
 
     if (mysqli_query($conn, $sql)) {
         return true;
@@ -43,7 +43,7 @@ function deleteProduct($id)
 function updateProduct($user)
 {
     $conn = getConnection();
-    $sql = "update product set Product_Name ='{$user['Product_Name']}', Quantity='{$user['Quantity']}', Buying_Price='{$user['Buying_Price']}', Selling_Price='{$user['Selling_Price']}', Comment='' where Product_ID={$user['id']}";
+    $sql = "update products set p_name ='{$user['p_name']}', p_type ='{$user['p_type']}', manufacturer ='{$user['manufacturer']}', stock ='{$user['stock']}', mrp='{$user['mrp']}' where p_id ={$user['p_id']}";
 
     if (mysqli_query($conn, $sql)) {
         return true;
@@ -56,10 +56,9 @@ function updateProduct($user)
 function getproductByID($id)
 {
     $conn = getConnection();
-    $sql = "select * from product where Product_ID ='{$id}'";
+    $sql = "select * from products where p_id ='{$id}'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
 
     return $row;
 }
-

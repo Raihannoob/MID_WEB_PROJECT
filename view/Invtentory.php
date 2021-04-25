@@ -10,7 +10,7 @@ include('header.php');
     <a href='deleteproduct.php'>
         <h2>Update products </h2>
     </a>
-    <a href='viewproduct.php'>
+    <a href='MedicineStock.php'>
         <h2>view All products</h2>
     </a>
     <a href='deleteproduct.php'>

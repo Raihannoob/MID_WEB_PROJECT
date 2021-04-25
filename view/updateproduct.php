@@ -23,7 +23,7 @@ $data =  getproductByID($id);
                                 ID:
                             </td>
                             <td>
-                                <input type="text" name='ProductID' value=" <?php echo $data['Product_ID'] ?>">
+                                <input type="text" name='ProductID' value=" <?php echo $data['p_id'] ?>">
                             </td>
                         </tr>
                         <tr>
@@ -31,37 +31,47 @@ $data =  getproductByID($id);
                                 Product Name:
                             </td>
                             <td>
-                                <input type="text" name='ProductName' value=" <?php echo $data['Product_Name'] ?> " id='pname' onblur="productNameValidation()">
+                                <input type="text" name='ProductName' value=" <?php echo $data['p_name'] ?> " id='pname' onblur="productNameValidation()">
                                 <span id="spname" style="color:red"> </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Quantity:
+                                Product Type:
                             </td>
                             <td>
-                                <input type="text" name='Quantity' value="<?php echo $data['Quantity'] ?> " id="Quantity" onblur=" QuantityValidate()">
-                                <span id="spquantity" style="color:red"> </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Buying Price:
-                            </td>
-                            <td>
-                                <input type="text" name='Buyprice' value="<?php echo $data['Buying_Price'] ?>" id='bprice' onblur="BuypriceValidate()">
-                                <span id="spbprice" style="color:red"> </span>
+                                <input type="text" name='ptype' value="<?php echo $data['p_type'] ?> " id="ptype" onblur=" ProductTypeValidate()">
+                                <span id="sptype" style="color:red"> </span>
                             </td>
                         </tr>
                         <tr>
+                            <td>
+                                Mannufacture:
+                            </td>
+                            <td>
+                                <input type="text" name='Mannufacture' value="<?php echo $data['manufacturer'] ?>" id='Mannufacture' onblur="MannufactureValidate()">
+                                <span id="sMannufacture" style="color:red"> </span>
+                            </td>
+                        </tr>
+                        <tr>
                         </tr>
                         <tr>
                             <td>
-                                Selling Price:
+                                Stock:
                             </td>
                             <td>
-                                <input type="text" name='Sellprice' value="<?php echo $data['Selling_Price'] ?> " id='sprice' onblur="SellpriceValidate()">
-                                <span id="spsellprice" style="color:red"> </span>
+                                <input type="text" name='Stock' value="<?php echo $data['stock'] ?> " id='Stock' onblur="QuantityValidate()">
+                                <span id="sStock" style="color:red"> </span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                MRP::
+                            </td>
+                            <td>
+                                <input type="text" name='MRP' value="<?php echo $data['mrp'] ?> " id='MRP' onblur="mrpValidate()">
+                                <span id="sMRP" style="color:red"> </span>
                             </td>
 
                         </tr>

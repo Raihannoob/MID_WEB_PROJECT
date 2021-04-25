@@ -23,34 +23,44 @@ include('header.php');
                 </tr>
                 <tr>
                     <td>
-                        Quantity:
+                        Product Type:
                     </td>
                     <td>
-                        <input type="text" name='Quantity' id="Quantity" onblur=" QuantityValidate()">
-                        <span id="spquantity" style="color:red"> </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Buying Price:
-                    </td>
-                    <td>
-                        <input type="text" name='Buyprice' id='bprice' onblur="BuypriceValidate()">
-                        <span id="spbprice" style="color:red"> </span>
+                        <input type="text" name='ptype' id="ptype" onkeyup="ProductTypeValidate()">
+                        <span id="sptype" style="color:red"> </span>
                     </td>
                 </tr>
                 <tr>
+                    <td>
+                        Mannufacture:
+                    </td>
+                    <td>
+                        <input type="text" name='Mannufacture' id='Mannufacture' onblur="MannufactureValidate()">
+                        <span id="sMannufacture" style="color:red"> </span>
+                    </td>
+                </tr>
+                <tr>
                 </tr>
                 <tr>
                     <td>
-                        Selling Price:
+                        Stock:
                     </td>
                     <td>
-                        <input type="text" name='Sellprice' id='sprice' onblur="SellpriceValidate()">
-                        <span id="spsellprice" style="color:red"> </span>
+                        <input type="text" name='Stock' id='Stock' onblur="QuantityValidate()">
+                        <span id="sStock" style="color:red"> </span>
                     </td>
 
                 </tr>
+                <tr>
+                    <td>
+                        MRP:
+                    </td>
+                    <td>
+                        <input type="text" name='MRP' id="MRP" onblur=" mrpValidate()">
+                        <span id="sMRP" style="color:red"> </span>
+                    </td>
+                </tr>
+
                 <tr>
                     <td colspan="2">
                         <input type='submit' name='submit' value='submit'>
