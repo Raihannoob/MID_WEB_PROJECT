@@ -1,28 +1,31 @@
 <?php
 $title = "Set Salary";
 include('header.php');
+require_once('../model/forignmodel.php');
+$data = getAll();
 ?>
 <td>
     <table border="1px solid black" width='80%' align='center'>
-        <tr>
+        <>
+            <th>Id</th>
             <th>Name</th>
-            <th>Date</th>
-            <th>Branch</th>
-            <th>Attendence</th>
-        </tr>
-        <tr>
-            <td>Raihan</td>
-            <td>02/03/2021</td>
-            <td>Dhaka</td>
-            <td>Present</td>
+            <th>Category</th>
+            <th>Action</th>
+            <th>Decision</th>
+            </tr>
+            <?php for ($i = 0; $i < count($data); $i++) { ?>
+                <tr>
+                    <td><?= $data[$i]['Id'] ?></td>
+                    <td><?= $data[$i]['Name'] ?></td>
+                    <td><?= $data[$i]['Category'] ?></td>
+                    <td><?= $data[$i]['Action'] ?></td>
+                    <td>
+                        <a href="acceptforignmed.php?id=<?= $data[$i]['Id'] ?>"> Accept </a> |
+                        <a href="acceptforignmed.php?id=<?= $data[$i]['Id'] ?>"> Reject </a>
+                    </td>
+                </tr>
 
-        </tr>
-        <tr>
-            <td>Jim</td>
-            <td>02/03/2021</td>
-            <td>Dhaka</td>
-            <td>Absent</td>
-        </tr>
+            <?php } ?>
     </table>
 
 </td>
