@@ -1,7 +1,10 @@
 <?php
 $title = "View Profile";
 include('header.php');
+require_once('../model/db.php');
+require_once('../model/userModel.php');
 
+$info = getUserByName($_SESSION['username']);
 ?>
 
 <td>
@@ -10,10 +13,10 @@ include('header.php');
         <table width='100%'>
             <tr>
                 <td>
-                    Name:
+                    Full Name:
                 </td>
                 <td>
-                    <?php echo $_SESSION['name'] ?>
+                    <?php echo $info['name'] ?>
                 </td>
                 <td rowspan="8" align="center">
                     <img src='../asset/user.png' height="150px" />
@@ -30,7 +33,7 @@ include('header.php');
                     Email:
                 </td>
                 <td>
-                    <?php echo $_SESSION['email'] ?>
+                    <?php echo $info['email'] ?>
                 </td>
             </tr>
             <tr>
@@ -43,7 +46,7 @@ include('header.php');
                     Gender:
                 </td>
                 <td>
-                    <?php echo $_SESSION['gender'] ?>
+                    <?php echo $info['gender'] ?>
                 </td>
             </tr>
             <tr>
@@ -53,10 +56,10 @@ include('header.php');
             </tr>
             <tr>
                 <td>
-                    Phone:
+                    User name:
                 </td>
                 <td>
-                    <?php echo $_SESSION['phone'] ?>
+                    <?php echo $info['username'] ?>
                 </td>
             </tr>
             <tr>
@@ -69,11 +72,7 @@ include('header.php');
                     Date of Birth:
                 </td>
                 <td>
-                    <?php echo $_SESSION['date'] ?>
-                    <?php echo "/" ?>
-                    <?php echo $_SESSION['month'] ?>
-                    <?php echo "/" ?>
-                    <?php echo $_SESSION['year'] ?>
+                    <?php echo $info['date'] ?>
                 </td>
             </tr>
             <tr>

@@ -1,53 +1,71 @@
 <?php
 $title = "Connect With Admin";
 include('header.php');
-require_once('../model/ContactWithadminmodel.php');
-$data = getAlladmin();
 ?>
 <td>
-    <table border="1px solid black" width='80%' align='center'>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Post</th>
-            <th>Branch</th>
-            <th>Call</th>
+    <table>
 
-        </tr>
+        <fieldset>
+            <legend>Report Issue</legend>
+            <form action='../controller/issuecheck.php' method='post' onsubmit="return validateform()">
+                <script type="text/javascript" src="issuecheck.js"></script>
+                <table>
+                    <tr>
+                        <td>
+                            Username:
+                        </td>
+                        <td>
+                            <input type="text" name='Name' id='pname' onkeyup="NameValidation()">
+                            <span id="spname" style="color:red"> </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            User Type:
+                        </td>
+                        <td>
+                            <input type="text" name='utype' id="ptype" onkeyup="userTypeValidate()">
+                            <span id="sptype" style="color:red"> </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Priority:
+                        </td>
+                        <td>
+                            <input type="text" name='Priority' id='Mannufacture' onblur="PriorityValidate()">
+                            <span id="sMannufacture" style="color:red"> </span>
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            Comments:
+                        </td>
+                        <td>
+                            <input type="text" name='Comments' id='Stock' onblur="CommentValidate()">
+                            <span id="sStock" style="color:red"> </span>
+                        </td>
 
-        <?php for ($i = 0; $i < count($data); $i++) { ?>
-            <tr>
-                <td><?= $data[$i]['ID'] ?></td>
-                <td><?= $data[$i]['Name'] ?></td>
-                <td><?= $data[$i]['Phone'] ?></td>
-                <td><?= $data[$i]['Post'] ?></td>
-                <td><?= $data[$i]['Branch'] ?></td>
-                <td>
-                    <button onclick="change_text()"> Call </button>
-
-                </td>
-                <p id='demo' style="color:red"></p>
-            </tr>
-
-
-        <?php } ?>
-
-
-    </table>
+                    <tr>
+                        <td colspan="2">
+                            <input type='submit' name='submit' value='submit'>
+                            <input type='Reset' value='Reset'>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
 </td>
 </tr>
 </table>
 <fieldset>
-    <script>
-        "use strict"
-
-        function change_text() {
-            document.getElementById("demo").innerHTML = "This Function is not Available Now";
-        }
-    </script>
-
-
-    <?php
-    include('footer.php');
-    ?>
+    </table>
+    </td>
+    </tr>
+    </table>
+    <fieldset>
+        <?php
+        include('footer.php');
+        ?>

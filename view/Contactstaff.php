@@ -1,53 +1,71 @@
 <?php
-$title = "Connect With Admin";
+$title = "Connect With Staff";
 include('header.php');
-require_once('../model/ContactWithadminmodel.php');
-$data = getAlladmin();
 ?>
 <td>
-    <table border="1px solid black" width='80%' align='center'>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Post</th>
-            <th>Branch</th>
-            <th>Call</th>
+    <table>
+        <fieldset>
+            <legend>Contact Staff</legend>
+            <form action='./contactadmin.php' method='POST'>
+                <table align="">
+                    <tr>
+                        <td>
+                            Subject:
+                        </td>
+                        <td>
+                            <input id="sub" type="text" name='sub' value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Date:
+                        </td>
+                        <td>
+                            <input type="date" name='date'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Message Body:
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="msg" name="msg" rows="4" cols="50"> <?php
+                                                                                $m = $_COOKIE['msg'] ?? "";
+                                                                                echo $m; ?> </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
 
-        </tr>
+                    <tr>
+                        <td>
+                            <input type='submit' name="send" value='Send'><button type="button" onclick="document.getElementById('sub').value = ''">Clear Subject</button> <button type="button" onclick="document.getElementById('msg').value = ''">Clear Message</button>
 
-        <?php for ($i = 0; $i < count($data); $i++) { ?>
-            <tr>
-                <td><?= $data[$i]['ID'] ?></td>
-                <td><?= $data[$i]['Name'] ?></td>
-                <td><?= $data[$i]['Phone'] ?></td>
-                <td><?= $data[$i]['Post'] ?></td>
-                <td><?= $data[$i]['Branch'] ?></td>
-                <td>
-                    <button onclick="change_text()"> Call </button>
-
-                </td>
-                <p id='demo' style="color:red"></p>
-            </tr>
-
-
-        <?php } ?>
-
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
 
     </table>
 </td>
 </tr>
 </table>
 <fieldset>
-    <script>
-        "use strict"
-
-        function change_text() {
-            document.getElementById("demo").innerHTML = "This Function is not Available Now";
-        }
-    </script>
-
-
     <?php
     include('footer.php');
     ?>
